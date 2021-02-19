@@ -2,7 +2,9 @@ import React, {useState} from 'react'
 
 
 export const ChallengeCard = ({name, text, answer, code }) => {
-    const {guess, setGuess} = useState('')
+
+    const [guess, setGuess] = useState('hello');
+
 
     return (
         <div className="card-container">
@@ -11,9 +13,9 @@ export const ChallengeCard = ({name, text, answer, code }) => {
             <p>
                {text}
             </p>
-            <label htmlFor="answer">Enter Answer to decrypt key:</label>
-            <input type="text" name="answer" value={guess} onChange={e => setGuess(e.target.value)} placeholder="e.g 5"></input>
-            <p>{code}</p>
+            <label htmlFor="answer">Enter decryption key:</label>
+            <input type="text" name="guess" onChange={e => setGuess(e.target.value)} value={guess}></input>
+            {guess === answer && <div><h5 className="success-text">Decoding Message... </h5><h5 className="failure-text">Error, Partial Success. Manual Decryption Required:</h5><p><strong>{code}</strong></p></div>}
             </blockquote>
         </div>
     )
