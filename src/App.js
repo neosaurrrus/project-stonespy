@@ -17,7 +17,6 @@ function App() {
         </p>
 
      
-       
 
         <h2>Key #1</h2>
         <ChallengeCard name="Example Challenge" text="This is the text of the challenge, the answer is 'a'" answer="a" code="coded directions 1"/>
