@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 
 
-export const FeedingTimeCard = ({name, text, code, ph}) => {
+export const FeedingTimeCard = ({name, code, ph}) => {
 
     const [guess, setGuess] = useState('');
 
@@ -10,9 +10,9 @@ export const FeedingTimeCard = ({name, text, code, ph}) => {
         <div className="card-container">
             <blockquote>
             <h3>{name}</h3>
-            <p>We need your help planning for our Top Secret Christmas party, by understanding our drinking needs:</p>
+            <p>First of all, we need your help planning for our Top Secret Christmas party, by understanding our drinking needs:</p>
             <ol>
-                <li> All spies - except recruits - have at least some common sense</li>
+                <li> All staff - except recruits - have at least some common sense</li>
                 <li> Noone who drinks red wine can be anything but a fool</li>
                 <li> Only hopscotch players know what true happiness is</li>
                 <li> No fool has any common sense</li>
