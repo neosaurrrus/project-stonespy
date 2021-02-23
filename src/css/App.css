@@ -3,14 +3,15 @@
 :root {
   /* Define Colors as colors */
   --purple: #BC13DF;
-  --red: #ff0064;
+  --red: #860438;
   --green: #44ec11;
   --yellow: #FFB800;
-  --black: #252525;
+  --black: rgba(60,60,60,0.4);
   --blue: #34b9ff;
   --darkblue: #3C3D80;
-  --darkGrey: #222;
+  --darkGrey: rgba(145, 145, 145,0.5);
   --grey: #51515a;
+  --greydient: linear-gradient(to bottom, #666666, #283048); 
   --lightGrey: #EBEBEB;
   --white: #FFFEFE;
   --transparentWhite: rgba(255, 254, 254,0.2);
@@ -20,7 +21,7 @@
   --primary: var(--yellow);
   --failure: var(--red);
   --success: var(--green);
-  --background: var(--grey);
+  --background: var(--greydient);
   --logoColor: var(--darkblue);
   --textColor: var(--white);
   --buttonTextColor: var(--purple);
@@ -67,6 +68,7 @@
 html {
   font-size: var(--baseFontSize);
   box-sizing: border-box;
+  background: var(--yellow)
 } /*18px*/
 
 *,

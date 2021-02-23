@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 
 
-export const FeedingTimeCard = ({name, text, answer, code, ph}) => {
+export const FeedingTimeCard = ({name, text, code, ph}) => {
 
     const [guess, setGuess] = useState('');
 
@@ -29,7 +29,7 @@ export const FeedingTimeCard = ({name, text, answer, code, ph}) => {
             <label>Undetermined</label>
             <input type="radio" name="guess" placeholder={ph} onChange={e => setGuess(e.target.value)} value="Undeterminable"></input>
 
-            {guess === "Yes" && <div><h5 className="success-text">Decoding Message... </h5><h5 className="failure-text">Error, Partial Success. Manual Decryption Required:</h5><p><strong>{code}</strong></p></div>}
+            {guess === "No" && <div><h5 className="success-text">Decoding Message... </h5><h5 className="failure-text">Error, Partial Success. Manual Decryption Required:</h5><p><strong>{code}</strong></p></div>}
             </blockquote>
         </div>
     )
