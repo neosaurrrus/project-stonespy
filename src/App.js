@@ -14,7 +14,7 @@ function App() {
     
         <p>
          If you are reading this you have been able to receive our coded message. We know of your talents dealing with world crises. Now we must prepare you for another mission.
-          Below are a series of challenges that will train your mind to do stuff. I need some help with the copy here :)
+          Below are is the start of a mission that will prove you are ready.<strong>Should you complete the initial mission, You must wait to receive further authorization to proceed</strong>
         </p>
 
         <h2>Mission #1</h2>
